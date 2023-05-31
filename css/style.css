@@ -1,0 +1,56 @@
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar {
+background-color: #f80ab4;
+padding: 10px;
+}
+
+.menu {
+list-style: none;
+display: flex;
+justify-content: end;
+}
+
+.menu-item {
+position: relative;
+}
+
+.menu-item a {
+text-decoration: none;
+color: #ffffff;
+padding: 10px;
+}
+
+.submenu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #000000;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+list-style: none;
+}
+
+.menu-item:hover .submenu {
+display: block;
+}
+
+.submenu li {
+margin-bottom: 5px;
+}
+
+.submenu a {
+display: block;
+padding: 5px;
+color: #ffffff;
+text-decoration: none;
+}
+
+.submenu a:hover {
+background-color: #f402f0;
+}
+
