@@ -95,6 +95,8 @@ body {
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  background-repeat: no-repeat;
+
 }
 #liste {
   display: flex;
@@ -104,14 +106,10 @@ body {
 }
 
 /*card des recettes*/
-.card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-}
+
 
 .container_card {
-  width: 1270px;
+  max-width: 1270px;
   overflow-x: auto; /* Ajout de l'overflow-x avec la valeur "auto" */
   overflow-y: hidden; /* Masque l'overflow vertical si nécessaire */
   gap: 20px;
