@@ -21,7 +21,7 @@ header {
   
 }
 .logo img {
-  width: 200px;
+  width: 100px;
 }
 a {
   text-decoration: none;
@@ -35,8 +35,12 @@ h1{
 }
 h2 {
   color: var(--clr3);
-  padding-top: 20px;
+  margin-top: 50px;
   text-align: center;
+}
+.title2{
+  height: 100px;
+  
 }
 .flex{
   display: flex;
@@ -199,11 +203,36 @@ footer {
   text-decoration: underline;
 }
 .card_5{
-  padding-top: 50px;
-}
-.card_5txt{
-  width: 400px;
-}
-.card_5img img{
-  width: 400px;
+  margin-top: 20px;
+  justify-content: center;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  
+  .card_5txt{
+    width: 280px;
+    margin-bottom: 20px;
+  }
+  .card_5img img{
+    width: 280px;
+    margin-bottom: 20px;
+  }
+  h1{
+    font-size: 30px;
+  }
+@media (min-width:321px) {
+ 
+  .card_5{
+  
+    display: flex;
+  }
+  .card_5txt{
+    width: 400px;
+  }
+  .card_5img img{
+    width: 400px;
+  }
+  
 }
