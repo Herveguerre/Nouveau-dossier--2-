@@ -167,3 +167,15 @@ font-size: 20px;
 object-fit: cover;
   background-color: #000000; /* Couleur de fond des boutons de défilement horizontaux */
 }
+span{
+  display: none;
+}
+@media (max-width:768px) {
+
+  ::-webkit-scrollbar-button:horizontal {
+  display: none;/* boutons de défilement horizontaux */
+}
+span{
+  display: block;
+}
+}
