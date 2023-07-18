@@ -127,8 +127,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 300px;
   height: 300px;
-
+text-decoration: none;
+color: #000;
+text-align: center;
+font-size: 20px;
   flex-shrink: 0; /* Empêche les cartes de réduire leur taille pour s'adapter au conteneur */
+}
+.card_sucre img{
+  width: 100%;
 }
 
 /* Pour les navigateurs WebKit (Safari, Chrome, etc.) */
