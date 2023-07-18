@@ -20,8 +20,11 @@ header {
   border-bottom: solid 1px #71370e;
   
 }
+.logo{
+  display: flex;
+}
 .logo img {
-  width: 100px;
+  width: 120px;
 }
 a {
   text-decoration: none;
