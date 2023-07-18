@@ -26,6 +26,7 @@ header {
 a {
   text-decoration: none;
   list-style: none;
+  color: var(--clr3);
 }
 h1{
   color: var(--clr3);
