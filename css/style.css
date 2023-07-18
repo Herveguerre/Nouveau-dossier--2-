@@ -168,12 +168,13 @@ body {
 
 
 footer {
- 
-  padding: 20px;
+ width: 300px;
+  padding-top: 20px;
   text-align: center;
 }
 
-.footer-links a {
+.footer-links a{
+  
   color: #333;
   text-decoration: none;
   margin: 0 10px;
