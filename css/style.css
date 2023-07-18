@@ -24,6 +24,8 @@ a {
 }
 h2 {
   text-align: center;
+  
+  display: flex;
 }
 .navbar {
   z-index: 9;
