@@ -1,6 +1,6 @@
 // Fonction pour récupérer et insérer le contenu du header
 function inclureHeader() {
-	fetch("./components/header.html")
+	fetch("../../components/header.html")
 	  .then((response) => response.text())
 	  .then((data) => {
 		document.getElementById("header").innerHTML = data;
@@ -8,7 +8,7 @@ function inclureHeader() {
   }
 // Fonction pour récupérer et insérer le contenu du head
 function inclureHead() {
-	fetch("./components/head.html")
+	fetch("../../components/head.html")
 	  .then((response) => response.text())
 	  .then((data) => {
 		document.getElementById("head").innerHTML = data;
@@ -17,7 +17,7 @@ function inclureHead() {
 
 // Fonction pour récupérer et insérer le contenu du liste1
 function inclureList_1() {
-	fetch("./components/list_1.html")
+	fetch("../../components/list_1.html")
 	  .then((response) => response.text())
 	  .then((data) => {
 		document.getElementById("list_1").innerHTML = data;
@@ -26,7 +26,7 @@ function inclureList_1() {
 
   // Fonction pour récupérer et insérer le contenu du liste2
 function inclureList_2() {
-	fetch("./components/list_2.html")
+	fetch("../../components/list_2.html")
 	  .then((response) => response.text())
 	  .then((data) => {
 		document.getElementById("list_2").innerHTML = data;
@@ -35,7 +35,7 @@ function inclureList_2() {
 
     // Fonction pour récupérer et insérer le contenu du liste3
 function inclureList_3() {
-	fetch("./components/list_3.html")
+	fetch("../../components/list_3.html")
 	  .then((response) => response.text())
 	  .then((data) => {
 		document.getElementById("list_3").innerHTML = data;
@@ -44,7 +44,7 @@ function inclureList_3() {
 
       // Fonction pour récupérer et insérer le contenu du liste4
 function inclureList_4() {
-	fetch("./components/list_4.html")
+	fetch("../../components/list_4.html")
 	  .then((response) => response.text())
 	  .then((data) => {
 		document.getElementById("list_4").innerHTML = data;
@@ -53,7 +53,7 @@ function inclureList_4() {
 
   // Fonction pour récupérer et insérer le contenu du footer
 function inclureFooter() {
-	fetch("./components/footer.html")
+	fetch("../../components/footer.html")
 	  .then((response) => response.text())
 	  .then((data) => {
 		document.getElementById("footer").innerHTML = data;
