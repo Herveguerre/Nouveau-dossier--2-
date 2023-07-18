@@ -1,43 +1,50 @@
-:root{
-  --clr1:#FF6347;
-  --clr2:#F9C79D;
-  --clr3:#8B4513;
-  --clrtxtb:#000;
-  --clrtxtw:#fff;
-  --grad:linear-gradient(to bottom right, var(--clr1), var(--clr2), var(--clr3));
-  
+:root {
+  --clr1: #ff6347;
+  --clr2: #f9c79d;
+  --clr3: #8b4513;
+  --clrtxtb: #000;
+  --clrtxtw: #fff;
+  --grad: linear-gradient(
+    to bottom right,
+    var(--clr1),
+    var(--clr2),
+    var(--clr3)
+  );
 }
-*{
+
+* {
   margin: 0 auto;
 }
-header{
+header {
   height: 100px;
 }
-a{
+a {
   text-decoration: none;
   list-style: none;
 }
-
+h2 {
+  text-align: center;
+}
 .navbar {
-z-index: 9;
-width: 500px;
-padding: 10px;
+  z-index: 9;
+  width: 500px;
+  padding: 10px;
 }
 
 .menu {
-list-style: none;
-display: flex;
-justify-content: end;
+  list-style: none;
+  display: flex;
+  justify-content: end;
 }
 
 .menu-item {
-position: relative;
+  position: relative;
 }
 
 .menu-item a {
-text-decoration: none;
-color: #000000;
-padding: 10px;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
 }
 
 .submenu {
@@ -45,52 +52,51 @@ padding: 10px;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
-  backdrop-filter: blur(10px); 
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   padding: 10px;
   width: 100px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 
-  inset 0 0 0 1px rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2);
   list-style: none;
   z-index: 999;
   border-radius: 10px;
 }
 
-
 .menu-item:hover .submenu {
-display: block;
+  display: block;
 }
 
 .submenu li {
-margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .submenu a {
-display: block;
-padding: 5px;
-color: var(--clrtxtw);
-text-decoration: none;
+  display: block;
+  padding: 5px;
+  color: var(--clrtxtw);
+  text-decoration: none;
 }
 
 .submenu a:hover {
-background-color: var(--clr3);
+  background-color: var(--clr3);
 }
 
-.container{
+.container {
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 body {
   z-index: 8;
-  background-image: url(../img/), linear-gradient(to bottom right, var(--clr1), var(--clr2), var(--clr3));
+  background-image: url(../img/),
+    linear-gradient(to bottom right, var(--clr1), var(--clr2), var(--clr3));
   border-radius: 10px;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  height: 100vh;
 }
-#liste{
+#liste {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -99,116 +105,61 @@ body {
 
 /*card des recettes*/
 .card {
-  z-index: 9;
-  margin: 20px;
-  width: 300px;
-  height: 350px;
-  background: rgba(255, 99, 71, 0.6);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 6px );
-  -webkit-backdrop-filter: blur( 6px );
-  border-radius: 10px;
-  border: 1px solid var(--clr3);
-}
-
-.card img {
-  z-index: 9;
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-content {
-  z-index: 9;
-  padding: 20px;
-  color: var(--clrtxtb);
-  text-align: center;
-}
-
-.card-content h2 {
-  font-size: 24px;
+  border: 1px solid #ccc;
+  padding: 10px;
   margin-bottom: 10px;
 }
 
-.card-content p {
-  font-size: 16px;
+.container_card {
+  width: 1270px;
+  overflow-x: auto; /* Ajout de l'overflow-x avec la valeur "auto" */
+  overflow-y: hidden; /* Masque l'overflow vertical si nécessaire */
+  gap: 20px;
+  display: flex;
 }
 
-.card-content p:first-of-type {
-  margin-top: 0;
+.card_sucre {
+  background: rgba(255, 255, 255, 0.217);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.045);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 300px;
+  height: 300px;
+
+  flex-shrink: 0; /* Empêche les cartes de réduire leur taille pour s'adapter au conteneur */
 }
 
-.card-content p:last-of-type {
-  margin-bottom: 0;
+/* Pour les navigateurs WebKit (Safari, Chrome, etc.) */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 15px; /* Largeur de la barre de défilement */
+  object-fit: cover;
+  cursor: pointer;
 }
 
+::-webkit-scrollbar-track {
+  display: none; /* Couleur de fond de la piste de défilement */
+}
 
-  /*bouton*/
-  button {
-    z-index: 9;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none;
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    background-image: linear-gradient(to bottom right, var(--clr1), var(--clr2), var(--clr3));
-    object-fit: cover;
-    border-radius: 30px;
-    border: 1px solid var(--clr3);
-    transition: all 0.2s ease;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #000000;
+::-webkit-scrollbar-thumb {
+  background-color: #8b4513; /* Couleur de la poignée de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #71370e;
+   /* Couleur de la poignée de défilement au survol */
+  
   
 }
 
-button:hover {
-  box-shadow: 0 4px 3px 1px var(--clr3), 
-  0 6px 8px var(--clr2), 0 -4px 4px var(--clr1), 
-  0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+::-webkit-scrollbar-button {
+  display: none; /* Afficher les boutons de défilement */
 }
 
-button:active {
-  box-shadow: 0 4px 3px 1px var(--clr3),
-  0 6px 8px var(--clr2), 0 -4px 4px var(--clr1), 
-  0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, 
-  inset 0 0 30px #aaa;
-}
-
-button:focus {
-  box-shadow: 0 4px 3px 1px var(--clr3), 
-  0 6px 8px var(--clr2), 0 -4px 4px var(--clr1), 
-  0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, 
-  inset 0 0 30px #aaa;
-}
-
-/*card  d'une recette*/
-.cardxl{
-  margin: 0 auto;
-  z-index: 99999;
-  border:solid 1px #000;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  
-}
-.cardxl img{
-  margin: 0 auto;
-  width: 50vw;
-  justify-content: center;
-  border-radius: 20px;
-}
-.cardxl h2{
-  text-align: center;
-  padding: 20px;
-}
-.cardxl p{
-  text-align: center;
-  font-size: 20px;
-  margin: 20px;
+::-webkit-scrollbar-button:horizontal {
+  cursor: pointer;
+object-fit: cover;
+  background-color: #000000; /* Couleur de fond des boutons de défilement horizontaux */
 }
