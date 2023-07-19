@@ -61,6 +61,7 @@ a {
 }
 
 h1 {
+  font-family:cursive;
   margin-top: 20px;
   text-align: center;
   font-size: clamp(30px, 5vw, 80px);
@@ -73,6 +74,7 @@ h1 {
 }
 
 h2 {
+  font-family:cursive;
   font-size: clamp(20px, 4vw, 50px);
   color: var(--clr3);
   margin-top: 50px;
