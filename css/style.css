@@ -65,12 +65,12 @@ h1 {
   margin-top: 20px;
   text-align: center;
   font-size: clamp(30px, 5vw, 80px);
-  background-image: linear-gradient(to right, #f24020, #f2964b, #8b4513);
+  background-image: linear-gradient(to right, var(--clr1) , var(--clr3));/*#f2964b*/
   background-size: 200% 100%;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: color-sweep 8s linear infinite;
+  animation: color-sweep 6s linear infinite;
 }
 
 h2 {
