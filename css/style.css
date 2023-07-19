@@ -178,6 +178,9 @@ body {
 .container_card :nth-child(1){
   font-family: cursive;
 }
+.container_card :nth-child(3){
+  font-family: cursive;
+}
 
 .card_sucre {
   background: rgba(255, 255, 255, 0.217);
