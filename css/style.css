@@ -15,6 +15,7 @@
 * {
   margin: 0 auto;
   font-size: 20px;
+  font-family:sans-serif
 }
 header {
   height: 250px;
@@ -63,7 +64,7 @@ h1 {
   margin-top: 20px;
   text-align: center;
   font-size: clamp(30px, 5vw, 80px);
-  background-image: linear-gradient(to right, #f24020, #f39f5b, #8b4513);
+  background-image: linear-gradient(to right, #f24020, #f2964b, #8b4513);
   background-size: 200% 100%;
   color: transparent;
   -webkit-background-clip: text;
@@ -72,6 +73,7 @@ h1 {
 }
 
 h2 {
+  font-size: clamp(20px, 4vw, 50px);
   color: var(--clr3);
   margin-top: 50px;
   margin-bottom: 10px;
