@@ -174,7 +174,9 @@ body {
   overflow-y: hidden; /* Masque l'overflow vertical si nécessaire */
   gap: 20px;
   display: flex;
-  
+}
+.container_card :nth-child(1){
+  font-family: cursive;
 }
 
 .card_sucre {
@@ -193,7 +195,7 @@ body {
   flex-shrink: 0; /* Empêche les cartes de réduire leur taille pour s'adapter au conteneur */
 }
 .card_sucre img {
-  width: 100%;
+  width: 90%;
 }
 
 /* Masquer la barre de défilement verticale */
