@@ -25,6 +25,8 @@ header {
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border: 2px solid var(--clr3);
+  box-shadow:  -23px -23px 46px #b54632,
+  23px 23px 46px #ff805c;
 }
 
 a {
