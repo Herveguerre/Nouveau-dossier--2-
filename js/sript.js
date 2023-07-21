@@ -75,12 +75,6 @@ inclureFooter();
    // e.preventDefault();
   //});
 
-  // Votre code JavaScript pour gérer l'impression //
- 
-    document.getElementById("printButton").addEventListener("click", function() {
-      window.print();
-    });
   
-
 
 
