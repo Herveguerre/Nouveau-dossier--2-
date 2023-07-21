@@ -81,3 +81,6 @@ inclureFooter();
       window.print();
     });
   
+
+
+
