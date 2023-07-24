@@ -203,7 +203,7 @@ body {
 
 /* Masquer la barre de défilement verticale */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 0px;
   height: 15px; /* Largeur de la barre de défilement */
   object-fit: cover;
   cursor: pointer;
