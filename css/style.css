@@ -218,7 +218,17 @@ body {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-
+.arrow_left{
+  margin-top: 290px;
+  position: fixed;
+  cursor: pointer;
+}
+.arrow_right{
+  cursor: pointer;
+  margin-top: 293px;
+  position: fixed;
+  margin-left: 1252px;
+}
 /* Masquer la barre de défilement verticale */
 ::-webkit-scrollbar {
   width: 0px;
