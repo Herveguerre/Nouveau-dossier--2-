@@ -1,3 +1,7 @@
+.site {
+  color: #8b451398;
+  text-align: center;
+}
 :root {
   --clr1: #ff6347;
   --clr2: #f9c79d;
@@ -17,10 +21,7 @@
   font-size: 20px;
   font-family: sans-serif;
 }
-/* header {
-  height: 250px;
-  border-bottom: solid 1px  linear-gradient(to right, var(--clr1), var(--clr3)) ;
-} */
+
 header {
   height: 250px;
   position: relative; /* Ajout de la position relative pour positionner le pseudo-élément */
