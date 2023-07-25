@@ -60,7 +60,16 @@ function inclureFooter() {
 	  });
   }
   
-
+    // Fonction pour récupérer et insérer le contenu du bouton
+function inclureBouton() {
+	fetch("../../components/bouton.html")
+	  .then((response) => response.text())
+	  .then((data) => {
+		document.getElementById("bouton").innerHTML = data;
+	  });
+  }
+  
+  
 // Appel des fonctions pour inclure le header et le footer etc
 inclureHead();
 inclureHeader();
@@ -69,6 +78,7 @@ inclureList_2();
 inclureList_3();
 inclureList_4();
 inclureFooter();
+inclureBouton();
   
   // Désactiver l'événement contextmenu (clic droit)
   //document.addEventListener('contextmenu', function(e) {
