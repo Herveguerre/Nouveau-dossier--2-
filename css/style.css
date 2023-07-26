@@ -170,6 +170,7 @@ body {
   z-index: 8;
   background-image: url(../img/),
     linear-gradient(to bottom right, var(--clr1), var(--clr2), var(--clr3));
+    animation: color-sweep 6s linear infinite;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
