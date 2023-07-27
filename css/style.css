@@ -1,19 +1,13 @@
 .site {
-  color: #8b451398;
+  color: #8b4513;
   text-align: center;
 }
+
 :root {
-  --clr1: #ff6347;
+  --clr1: #f63;
   --clr2: #f9c79d;
   --clr3: #8b4513;
-  --clrtxtb: #000;
   --clrtxtw: #fff;
-  --grad: linear-gradient(
-    to bottom right,
-    var(--clr1),
-    var(--clr2),
-    var(--clr3)
-  );
 }
 
 * {
@@ -24,7 +18,7 @@
 
 header {
   height: 250px;
-  position: relative; /* Ajout de la position relative pour positionner le pseudo-élément */
+  position: relative;
 }
 
 header::after {
@@ -34,16 +28,29 @@ header::after {
   left: 0;
   width: 100%;
   height: 1px;
-  background-image: linear-gradient(to right, var(--clr1), var(--clr3));
-  animation: color-sweep 6s linear infinite;
 }
+
+body {
+  background-repeat: space;
+  background: linear-gradient(to right, var(--clr1), var(--clr3));
+  background-size: 400% 100%;
+  animation: ani 240s linear infinite;
+}
+@keyframes ani {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+} 
+
 .logo img {
   width: 120px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  /* border: 2px solid var(--clr3); */
+  border-radius: 20px 0 20px 0;
   box-shadow: -23px -23px 46px #b54632, 23px 23px 46px #ff7e5a;
 }
+
 .logo img:hover {
   box-shadow: inset -23px -23px 46px #b54632, inset 23px 23px 46px #ff805c;
 }
@@ -66,40 +73,35 @@ a {
   }
 }
 
-h1 {
+h1,
+h2 {
   font-family: cursive;
-  margin-top: 20px;
   text-align: center;
-  font-size: clamp(30px, 5vw, 80px);
-  color: transparent;
   background: linear-gradient(to right, var(--clr1), var(--clr3));
   -webkit-background-clip: text;
   background-clip: text;
-  animation: color-sweep 6s linear infinite;
+  animation: color-sweep 10s linear infinite;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 80px);
+  color: transparent;
   /* Ajoutez une transition pour une animation plus fluide lors du changement de transformation */
   transition: transform 0.3s ease-out;
+  margin-top: 20px;
 }
 
 h2 {
-  font-family: cursive;
   font-size: clamp(30px, 4vw, 50px);
-  background-image: linear-gradient(to right, var(--clr1), var(--clr3));
   background-size: 200% 100%;
   color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin-top: min(2vw, 50px);
-  margin-bottom: 50px;
-  text-align: center;
-  animation: color-sweep 6s linear infinite;
+  margin: 20px;
 }
 
-#title2 {
-  height: 100px;
-}
 .flex {
   display: flex;
 }
+
 .navbar {
   z-index: 9;
   width: 500px;
@@ -118,7 +120,7 @@ h2 {
 
 .menu-item a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   padding: 10px;
 }
 
@@ -162,17 +164,18 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
 body {
   z-index: 8;
-  background-image: url(../img/),
-    linear-gradient(to bottom right, var(--clr1), var(--clr2), var(--clr3));
-  animation: color-sweep 6s linear infinite;
+  background-image: url(../img/), linear-gradient(to bottom right, var(--clr1), var(--clr2), var(--clr3));
+  animation: color-sweep 60s linear infinite;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   background-repeat: no-repeat;
 }
+
 #liste {
   display: flex;
   flex-wrap: wrap;
@@ -184,14 +187,13 @@ body {
 
 .container_card {
   max-width: 1270px;
-  overflow-x: auto; /* Ajout de l'overflow-x avec la valeur "auto" */
-  overflow-y: hidden; /* Masque l'overflow vertical si nécessaire */
+  overflow-x: auto;
+  overflow-y: hidden;
   gap: 20px;
   display: flex;
 }
-.container_card :nth-child(1) {
-  font-family: cursive;
-}
+
+.container_card :nth-child(1),
 .container_card :nth-child(3) {
   font-family: cursive;
 }
@@ -209,49 +211,24 @@ body {
   color: #000;
   text-align: center;
   font-size: 20px;
-  flex-shrink: 0; /* Empêche les cartes de réduire leur taille pour s'adapter au conteneur */
+  flex-shrink: 0;
 }
+
 .card_sucre img {
   width: 90%;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
 }
-.arrow_left {
-  margin-top: 100px;
-  position: fixed;
-  cursor: pointer;
-}
+
+.arrow_left,
 .arrow_right {
   cursor: pointer;
   margin-top: 100px;
   position: fixed;
-  margin-left: 290px;
 }
+
 /* Masquer la barre de défilement verticale */
 ::-webkit-scrollbar {
-  width: 0px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #8b451300; /* Couleur de fond de la piste de défilement */
-}
-
-::-webkit-scrollbar-thumb {
-  /* Couleur de la poignée de défilement au survol */
-  animation: color-sweep 6s linear infinite;
-  font-family: cursive;
-  font-size: clamp(30px, 5vw, 80px);
-  background-image: linear-gradient(to right, var(--clr1), var(--clr3));
-}
-
-::-webkit-scrollbar-button {
-  display: none; /* Afficher les boutons de défilement */
-}
-
-::-webkit-scrollbar-button:horizontal {
-  cursor: pointer;
-  object-fit: cover;
-  background-color: #000000; /* Couleur de fond des boutons de défilement horizontaux */
+  width: 0;
 }
 
 footer {
@@ -269,6 +246,7 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
 .card_5 {
   margin-top: 20px;
   justify-content: center;
@@ -286,8 +264,7 @@ footer {
 .card_5img img {
   width: 280px;
   margin-bottom: 20px;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
 }
 
 @media (min-width: 768px) {
@@ -300,7 +277,4 @@ footer {
   .card_5img img {
     width: 400px;
   }
-  /* h1 {
-    margin-top: -20px;
-  } */
 }
