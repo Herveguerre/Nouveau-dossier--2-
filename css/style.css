@@ -81,6 +81,7 @@ h2 {
   -webkit-background-clip: text;
   background-clip: text;
   animation: color-sweep 10s linear infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
