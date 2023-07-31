@@ -249,6 +249,7 @@ footer {
 }
 
 .card_5 {
+  align-items: center;
   margin-top: 20px;
   justify-content: center;
   max-width: 1440px;
