@@ -10,7 +10,7 @@ function inclureHeader() {
 
 // Fonction pour récupérer et insérer le contenu du liste1
 function inclureList_1() {
-  fetch("../../components/list_1.html")
+  fetch("../../components/list_entree_1.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("list_1").innerHTML = data;
@@ -19,7 +19,7 @@ function inclureList_1() {
 
 // Fonction pour récupérer et insérer le contenu du liste2
 function inclureList_2() {
-  fetch("../../components/list_2.html")
+  fetch("../../components/list_plat_2.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("list_2").innerHTML = data;
@@ -28,7 +28,7 @@ function inclureList_2() {
 
 // Fonction pour récupérer et insérer le contenu du liste3
 function inclureList_3() {
-  fetch("../../components/list_3.html")
+  fetch("../../components/list_tarte_3.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("list_3").innerHTML = data;
@@ -37,7 +37,7 @@ function inclureList_3() {
 
 // Fonction pour récupérer et insérer le contenu du liste4
 function inclureList_4() {
-  fetch("../../components/list_4.html")
+  fetch("../../components/list_dessert_4.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("list_4").innerHTML = data;
