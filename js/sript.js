@@ -1,13 +1,5 @@
-// Fonction pour récupérer et insérer le contenu du head
-function inclureHead() {
-	fetch("../../components/head.html")
-	  .then((response) => response.text())
-	  .then((data) => {
-		document.getElementById("head").innerHTML = data;
-	  });
-  }
-  
-  // Fonction pour récupérer et insérer le contenu du header
+
+// Fonction pour récupérer et insérer le contenu du header
 function inclureHeader() {
   fetch("../../components/header.html")
     .then((response) => response.text())
@@ -15,7 +7,6 @@ function inclureHeader() {
       document.getElementById("header").innerHTML = data;
     });
 }
-
 
 // Fonction pour récupérer et insérer le contenu du liste1
 function inclureList_1() {
@@ -72,7 +63,7 @@ function inclureBouton() {
 }
 
 // Appel des fonctions pour inclure le header et le footer etc
-inclureHead();
+
 inclureHeader();
 inclureList_1();
 inclureList_2();
@@ -85,5 +76,3 @@ inclureBouton();
 //document.addEventListener('contextmenu', function(e) {
 // e.preventDefault();
 //});
-
-
