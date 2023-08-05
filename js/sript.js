@@ -44,6 +44,15 @@ function inclureList_4() {
     });
 }
 
+// Fonction pour récupérer et insérer le contenu du liste5
+function inclureList_5() {
+  fetch("../../components/list_bebe_5.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("list_5").innerHTML = data;
+    });
+}
+
 // Fonction pour récupérer et insérer le contenu du footer
 function inclureFooter() {
   fetch("../../components/footer.html")
@@ -69,6 +78,7 @@ inclureList_1();
 inclureList_2();
 inclureList_3();
 inclureList_4();
+inclureList_5();
 inclureFooter();
 inclureBouton();
 
