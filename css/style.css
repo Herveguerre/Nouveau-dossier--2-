@@ -129,10 +129,7 @@ body {
 }
 
 /*card des recettes*/
-.container_card::-webkit-scrollbar-thumb {
-  background-color: var(--clr3);
-  border-radius: 10px;
-}
+
 .container_card {
   max-width: 1270px;
   overflow-x: auto;
@@ -227,5 +224,9 @@ footer {
   }
   .card_5img img {
     width: 400px;
+  }
+  .container_card::-webkit-scrollbar-thumb {
+    background-color: var(--clr3);
+    border-radius: 10px;
   }
 }
