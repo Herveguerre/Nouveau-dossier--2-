@@ -86,3 +86,17 @@ inclureBouton();
 //document.addEventListener('contextmenu', function(e) {
 // e.preventDefault();
 //});
+
+
+
+function scrollLeft() {
+  const containerCard = document.querySelector(".container_card");
+  const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
+  containerCard.scrollBy(-cardWidth, 0);
+}
+
+function scrollRight() {
+  const containerCard = document.querySelector(".container_card");
+  const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
+  containerCard.scrollBy(cardWidth, 0);
+}

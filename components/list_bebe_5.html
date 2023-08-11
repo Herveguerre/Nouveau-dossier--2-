@@ -1,64 +1,118 @@
 <div><br /><br /></div>
 <h2><span>&#x2190;</span>Pour bébé de 4 à 18 mois<span>&#x2192;</span></h2>
-<div class="container_card">
+<div class="container_scroll">
+  <div class="container_card">
 
-  <a href=""><div class="card_sucre">1
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
+    <a href="" title=""
+      ><div class="card_sucre">
+        1
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
 
-  <a href=""><div class="card_sucre">2
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
+    <a href="" title=""
+      ><div class="card_sucre">
+        2
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
 
-  <a href=""><div class="card_sucre">3
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
+    <a href="" title=""
+      ><div class="card_sucre">
+        3
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
 
-  <a href=""><div class="card_sucre">4
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
+    <a href="" title=""
+      ><div class="card_sucre">
+        4
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
 
-  <a href=""><div class="card_sucre">5
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
-  <a href=""><div class="card_sucre">6
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
-  <a href=""><div class="card_sucre">7
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
-  <a href=""><div class="card_sucre">8
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
-  <a href=""><div class="card_sucre">9
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
-  <a href=""><div class="card_sucre">10
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a>
-  <a href=""><div class="card_sucre">11
-    <p>ici bientôt</p>
-    <img src="" alt=""/>
-    <p>une recette</p>
-  </div></a> 
+    <a href="" title=""
+      ><div class="card_sucre">
+        5
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
+    <a href="" title=""
+      ><div class="card_sucre">
+        6
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
+    <a href="" title=""
+      ><div class="card_sucre">
+        7
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
+    <a href="" title=""
+      ><div class="card_sucre">
+        8
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
+    <a href="" title=""
+      ><div class="card_sucre">
+        9
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
+    <a href="" title=""
+      ><div class="card_sucre">
+        10
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
+    <a href="" title=""
+      ><div class="card_sucre">
+        11
+        <p>ici bientôt</p>
+        <img src="" alt="" />
+        <p>une recette</p>
+      </div></a
+    >
+    
+  </div>
+  <button class="scroll-button prev-button" onclick="scrollLeft()">&#10094;</button>
+    <button class="scroll-button next-button" onclick="scrollRight()">&#10095;</button>
 </div>
+<script>
+  function scrollLeft() {
+    const containerCard = document.querySelector(".container_card");
+    const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
+    containerCard.scrollLeft -= cardWidth;
+  }
+  
+  function scrollRight() {
+    const containerCard = document.querySelector(".container_card");
+    const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
+    containerCard.scrollLeft += cardWidth;
+  }
+  
+  
+  
+</script>

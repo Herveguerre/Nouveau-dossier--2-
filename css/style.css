@@ -131,12 +131,13 @@ body {
 /*card des recettes*/
 
 .container_card {
-  max-width: 1270px;
+  max-width: 1200px;
   overflow-x: auto;
   overflow-y: hidden;
   gap: 20px;
   display: flex;
   overflow-x: scroll;
+  transition: transform 0.3s ease;
 }
 
 .container_card :nth-child(1),
@@ -165,13 +166,32 @@ body {
   border-radius: 20px;
 }
 
-.arrow_left,
-.arrow_right {
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-  margin-top: 100px;
-  position: fixed;
 }
 
+.container_scroll {
+  position: relative;
+  overflow: hidden;
+  /*max-width: 1270px;*/
+  width: 100%;
+}
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+.next-button, .prev-button{
+  color: var(--clr3);
+}
 /* Masquer la barre de défilement verticale */
 ::-webkit-scrollbar {
   width: 0;
