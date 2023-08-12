@@ -100,3 +100,26 @@ function scrollRight() {
   const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
   containerCard.scrollBy(cardWidth, 0);
 }
+
+
+// Enregistrez la position de défilement actuelle dans l'historique
+function saveScrollPosition() {
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  const stateObject = { scrollPosition: scrollPosition };
+  history.pushState(stateObject, '', window.location.href);
+}
+
+// Ajoutez cet événement au clic sur les liens
+document.addEventListener('click', function (event) {
+  const link = event.target.closest('a');
+  if (link && link.href && !link.href.includes('#')) {
+    saveScrollPosition();
+  }
+});
+// Restaurez la position de défilement lorsqu'un état de l'historique est restauré
+window.addEventListener('popstate', function (event) {
+  if (event.state && event.state.scrollPosition) {
+    const scrollPosition = event.state.scrollPosition;
+    window.scrollTo(0, scrollPosition);
+  }
+});
