@@ -20,6 +20,8 @@
   font-family: sans-serif;
 }
 
+
+
 header {
   height: 250px;
   position: relative;
@@ -169,6 +171,8 @@ body {
   text-align: center;
   font-size: 20px;
   flex-shrink: 0;
+
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.217));
 }
 
 .card_sucre img {
@@ -189,8 +193,13 @@ body {
 .container_scroll {
   position: relative;
   overflow: hidden;
-  /*max-width: 1270px;*/
+  max-width: 1270px;
   width: 100%;
+
+  overflow: hidden;
+  /* Ajoutez ces propriétés pour le dégradé */
+  background: linear-gradient(to right, #ffffff01, transparent);
+
 }
 .prev-button {
   left: 0;

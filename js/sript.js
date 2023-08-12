@@ -102,6 +102,9 @@ function scrollRight() {
 }
 
 
+
+
+
 // Enregistrez la position de défilement actuelle dans l'historique
 function saveScrollPosition() {
   const scrollPosition = window.scrollY || window.pageYOffset;
@@ -123,3 +126,10 @@ window.addEventListener('popstate', function (event) {
     window.scrollTo(0, scrollPosition);
   }
 });
+
+
+
+
+
+
+

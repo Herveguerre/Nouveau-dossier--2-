@@ -98,20 +98,22 @@
     
   </div>
   <button class="scroll-button prev-button" onclick="scrollLeft()">&#10094;</button>
-    <button class="scroll-button next-button" onclick="scrollRight()">&#10095;</button>
+<button class="scroll-button next-button" onclick="scrollRight()">&#10095;</button>
+
 </div>
 <script>
   function scrollLeft() {
     const containerCard = document.querySelector(".container_card");
     const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
-    containerCard.scrollLeft -= cardWidth;
+    containerCard.scrollBy(-cardWidth, 0);
   }
   
   function scrollRight() {
     const containerCard = document.querySelector(".container_card");
     const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
-    containerCard.scrollLeft += cardWidth;
+    containerCard.scrollBy(cardWidth, 0);
   }
+  
   
   
   
