@@ -170,6 +170,7 @@ body {
 .card_sucre img {
   width: 90%;
   border-radius: 20px;
+  max-height: 80%;
 }
 
 .scroll-button {
