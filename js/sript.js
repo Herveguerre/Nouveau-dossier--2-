@@ -8,6 +8,15 @@ function inclureHeader() {
     });
 }
 
+// Fonction pour récupérer et insérer le contenu du hero
+function inclureHero() {
+  fetch("../../components/hero.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("hero").innerHTML = data;
+    });
+}
+
 // Fonction pour récupérer et insérer le contenu du liste1
 function inclureList_1() {
   fetch("../../components/list_entree_1.html")
@@ -71,9 +80,19 @@ function inclureBouton() {
     });
 }
 
+// Fonction pour récupérer et insérer le contenu du nav
+function inclureNav() {
+  fetch("../../components/nav.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("nav").innerHTML = data;
+    });
+}
+
 // Appel des fonctions pour inclure le header et le footer etc
 
 inclureHeader();
+inclureHero();
 inclureList_1();
 inclureList_2();
 inclureList_3();
@@ -81,6 +100,7 @@ inclureList_4();
 inclureList_5();
 inclureFooter();
 inclureBouton();
+inclureNav();
 
 // Désactiver l'événement contextmenu (clic droit)
 //document.addEventListener('contextmenu', function(e) {
@@ -128,6 +148,31 @@ window.addEventListener('popstate', function (event) {
 });
 
 
+
+
+//slide du hero 
+const images = document.querySelectorAll('.slideshow-image');
+let currentImageIndex = 0;
+
+function showNextImage() {
+  const nextImageIndex = (currentImageIndex + 1) % images.length;
+
+  images[currentImageIndex].classList.remove('active');
+  images[nextImageIndex].classList.add('active');
+
+  currentImageIndex = nextImageIndex;
+}
+
+function startSlideshow() {
+  images[currentImageIndex].classList.add('active');
+  setInterval(showNextImage, 5000); // Change l'image toutes les 5 secondes
+}
+
+startSlideshow();
+
+
+
+//menu
 
 
 
