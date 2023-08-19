@@ -1,10 +1,89 @@
+
 <div class="hero">  
     <div class="slideshow">
-        <img class="slideshow-image active" src="../img/recettes_salades/salade_melon_avocat/final.jpg" alt=""/>
-        <img class="slideshow-image" src="../img/recettes_desserts/ccokies/final.jpg" alt=""/>
-        <img class="slideshow-image" src="../img/recettes_plats/saumon/final.jpg" alt=""/>   
-        <img class="slideshow-image" src="../img/recettes_salades/salade_pates_crudite/final.jpg" alt=""/>
-        <img class="slideshow-image" src="../img/recettes_desserts/crêpes/final.jpg" alt=""/>  
+        <img class="slideshow-image active" alt=""/>
     </div>
-    <h3>bientot des photos </h3>
+    <h3>bientôt des photos</h3>
 </div>
+
+<style>
+    /* slide hero */
+/* slide hero */
+.hero {
+    z-index: 99999;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.hero h3{
+    font-size: clamp(30px, 4vw, 50px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 10px;
+    color: var(--clr3);
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
+    }
+  
+  
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slideshow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 2s ease-in-out;
+    
+}
+
+.slideshow-image.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+</style>
+<script>
+    //slide du hero 
+    const images = [
+        
+        '/img/recettes_salades/salade_melon_avocat/final.jpg',
+        '/img/recettes_desserts/ccokies/final.jpg',
+        '/img/recettes_salades/salade_pates_crudite/final.jpg',
+        '/img/recettes_desserts/crêpes/final.jpg'
+    ];
+    
+    const slideshow = document.querySelector('.slideshow');
+    const slideshowImage = document.querySelector('.slideshow-image');
+    
+    let currentImageIndex = 0;
+    
+    function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        slideshowImage.src = images[currentImageIndex];
+    }
+    
+    function startSlideshow() {
+        showNextImage(); // Affiche la première image immédiatement
+        setInterval(showNextImage, 5000); // Change l'image toutes les 5 secondes
+    }
+    
+    startSlideshow();
+    
+</script>

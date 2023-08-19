@@ -103,9 +103,9 @@ inclureBouton();
 inclureNav();
 
 // Désactiver l'événement contextmenu (clic droit)
-//document.addEventListener('contextmenu', function(e) {
+// document.addEventListener('contextmenu', function(e) {
 // e.preventDefault();
-//});
+// });
 
 
 
@@ -150,25 +150,7 @@ window.addEventListener('popstate', function (event) {
 
 
 
-//slide du hero 
-const images = document.querySelectorAll('.slideshow-image');
-let currentImageIndex = 0;
 
-function showNextImage() {
-  const nextImageIndex = (currentImageIndex + 1) % images.length;
-
-  images[currentImageIndex].classList.remove('active');
-  images[nextImageIndex].classList.add('active');
-
-  currentImageIndex = nextImageIndex;
-}
-
-function startSlideshow() {
-  images[currentImageIndex].classList.add('active');
-  setInterval(showNextImage, 5000); // Change l'image toutes les 5 secondes
-}
-
-startSlideshow();
 
 
 
