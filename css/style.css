@@ -262,6 +262,6 @@ footer {
   }
   .next-button,
   .prev-button {
-    display: block;
+    display: none;/* block quant ils fonctionnerons */
   }
 }
