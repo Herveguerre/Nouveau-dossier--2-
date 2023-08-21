@@ -143,6 +143,7 @@ body {
   display: flex;
   overflow-x: scroll;
   transition: transform 0.3s ease;
+  border-radius: 30px;
 }
 
 .container_card :nth-child(1),
