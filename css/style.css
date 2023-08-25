@@ -16,16 +16,16 @@
   margin: 0 auto;
   box-sizing: border-box;
   font-size: 20px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 header {
-  
   height: 250px;
   position: relative;
   background-color: var(--clr4);
 }
-.clrw{
+.clrw {
   color: var(--clrtxtw);
 }
 header::after {
@@ -52,7 +52,7 @@ body {
     background-position: 100% 0;
   }
 }
-.logo{
+.logo {
   margin: 20px;
   & img {
     margin-top: 20px;
@@ -64,7 +64,6 @@ body {
     /* box-shadow: inset -23px -23px 46px #b54632, inset 23px 23px 46px #ff805c; */
     box-shadow: inset -23px -23px 46px #dbdbdbc2, inset 23px 23px 46px #e4e4e4a3;
   }
-  
 }
 
 a {
@@ -129,7 +128,7 @@ body {
   border-radius: 10px;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-  
+
   background-repeat: no-repeat;
 }
 
@@ -152,8 +151,8 @@ body {
   transition: transform 0.3s ease;
   border-radius: 30px;
 
-  background-color: var(--clr4);/*new style*/
-  padding: 20px;/*new style*/
+  background-color: var(--clr4); /*new style*/
+  padding: 20px; /*new style*/
 }
 
 .container_card :nth-child(1),
@@ -176,13 +175,14 @@ body {
   font-size: 20px;
   flex-shrink: 0;
   background: linear-gradient(transparent, rgba(255, 255, 255, 0.217));
+  & img {
+    width: 90%;
+    border-radius: 20px;
+    max-height: 70%;
+  }
 }
 
-.card_sucre img {
-  width: 90%;
-  border-radius: 20px;
-  max-height: 70%;
-}
+
 
 .scroll-button {
   position: absolute;
@@ -221,7 +221,7 @@ body {
 }
 
 footer {
-  margin-top: 50px;/* new style*/
+  margin-top: 50px; /* new style*/
 
   width: 300px;
   padding-top: 20px;
@@ -260,7 +260,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  header{
+  header {
     height: 350px;
   }
   .card_5 {
@@ -273,11 +273,11 @@ footer {
     width: 400px;
   }
   .container_card::-webkit-scrollbar-thumb {
-    background-color: var(--clr5);/*new style*/
+    background-color: var(--clr5); /*new style*/
     border-radius: 10px;
   }
   .next-button,
   .prev-button {
-    display: none;/* block quant ils fonctionnerons */
+    display: none; /* block quant ils fonctionnerons */
   }
 }
