@@ -20,7 +20,8 @@
 }
 
 header {
-  height: 350px;
+  
+  height: 250px;
   position: relative;
   background-color: var(--clr4);
 }
@@ -259,6 +260,9 @@ footer {
 }
 
 @media (min-width: 768px) {
+  header{
+    height: 350px;
+  }
   .card_5 {
     display: flex;
   }
