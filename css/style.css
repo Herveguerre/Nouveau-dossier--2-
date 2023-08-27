@@ -235,6 +235,11 @@ footer {
   
   padding: 20px;
   text-align: center;
+  margin-bottom: 0;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  z-index: 1;
 }
 
 .footer-links a {
@@ -382,18 +387,25 @@ menu nav ul li {
 }
 /* contact*/
 
-#body_contact{
-  height: 100vh;
-}
+
 #contact-form {
   background-color: #72b86a36;
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
   max-width: 400px;
+  height: 400px;
+  z-index: 99;
   
 }
-
+body form{
+  align-items: center;
+  margin: 0 auto;
+}
+.center{
+  text-align: center;
+  margin: 20px;
+}
 #contact-form label {
   display: block;
   margin-bottom: 5px;
