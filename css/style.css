@@ -236,10 +236,7 @@ footer {
   padding: 20px;
   text-align: center;
   margin-bottom: 0;
-  position: fixed;
-  width: 100vw;
-  bottom: 0;
-  z-index: 1;
+ 
 }
 
 .footer-links a {
