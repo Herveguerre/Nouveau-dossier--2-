@@ -399,8 +399,11 @@ body form {
   margin: 0 auto;
 }
 .center {
+  
   text-align: center;
   margin: 20px;
+  margin: 0 auto;
+  width: 90%;
 }
 #contact-form label {
   display: block;
