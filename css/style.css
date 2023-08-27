@@ -140,7 +140,6 @@ body {
   border-radius: 10px;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-
   background-repeat: no-repeat;
 }
 
@@ -232,9 +231,9 @@ body {
 
 footer {
   margin-top: 50px; /* new style*/
-
-  max-width: 300px;
-  padding-top: 20px;
+  background-color: var(--clr4);
+  
+  padding: 20px;
   text-align: center;
 }
 
@@ -380,4 +379,66 @@ menu {
 menu nav ul li {
   list-style: none;
   color: #8b4513;
+}
+/* contact*/
+
+#body_contact{
+  height: 100vh;
+}
+#contact-form {
+  background-color: #72b86a36;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+  
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4d8447;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #4d8447;
+  border-radius: 5px;
+}
+
+#contact-form textarea {
+  resize: vertical;
+}
+
+#contact-form button {
+  background-color: #4d8447;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #388036;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style pour les messages de succès */
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
 }
