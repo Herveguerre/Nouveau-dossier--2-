@@ -256,12 +256,18 @@ footer {
   display: grid;
   grid-template-columns: auto;
   gap: 20px;
+  
 }
 
 .card_5txt {
   min-width: 280px;
   margin-bottom: 20px;
+  margin: 0 auto;
+  & p{
+    width: 80%;
+  }
 }
+
 
 .card_5img img {
   width: 280px;
