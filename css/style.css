@@ -232,11 +232,13 @@ body {
 footer {
   margin-top: 50px; /* new style*/
   background-color: var(--clr4);
-  
+
   padding: 20px;
   text-align: center;
   margin-bottom: 0;
- 
+  & .flex {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-links a {
@@ -257,19 +259,18 @@ footer {
   display: grid;
   grid-template-columns: auto;
   gap: 20px;
-  
 }
 
 .card_5txt {
   min-width: 280px;
   margin-bottom: 20px;
   margin: 0 auto;
-  & p{
+  & p {
     width: 90%;
   }
 }
 
-.card_5img{
+.card_5img {
   margin: 0 auto;
   text-align: center;
   & img {
@@ -278,7 +279,6 @@ footer {
     border-radius: 20px;
   }
 }
-
 
 @media (min-width: 768px) {
   header {
@@ -312,7 +312,7 @@ menu {
   justify-content: center;
   position: relative;
   z-index: 2;
-  
+
   & nav {
     text-align: center;
     font-size: 20px;
@@ -384,7 +384,6 @@ menu nav ul li {
 }
 /* contact*/
 
-
 #contact-form {
   background-color: #72b86a36;
   padding: 20px;
@@ -393,13 +392,12 @@ menu nav ul li {
   max-width: 400px;
   height: 400px;
   z-index: 99;
-  
 }
-body form{
+body form {
   align-items: center;
   margin: 0 auto;
 }
-.center{
+.center {
   text-align: center;
   margin: 20px;
 }
@@ -450,4 +448,11 @@ body form{
   color: green;
   font-size: 14px;
   margin-top: 5px;
+}
+/*about*/
+.about {
+  & p {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }
