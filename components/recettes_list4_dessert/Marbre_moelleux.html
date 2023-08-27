@@ -1,7 +1,93 @@
-<script type="module" src="../../js/sript.js"></script>
-<link rel="stylesheet" href="../../css/style.css" />
-<div id="header"></div>
-<div id="bouton"></div>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script type="module" src="../../js/sript.js"></script>
+    
+    <title>les recettes d'Angelique</title>
+  </head>
+  <body>
+    <header>
+      <logo class="logo">
+        <a href="/index.html">
+          <img
+            src="/img/cupcakes-g59ddcd4c7_640-removebg-preview.png"
+            title="Acceuil"
+            alt="logo"
+          />
+        </a>
+      
+        <div class="bg">
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          />
+          <menu>
+            <i
+              class="fa-solid fa-bars"
+              id="menu_burger"
+              title="toutes les recettes"
+            ></i>
+            <nav id="menu_open">
+              <a href="/index.html">Acceuil</a>
+              <div class="flex">
+                <div class="gap">
+                  <p>Entrées</p>
+                  <a href="/components/recettes_list1_entree/salade_thon.html#title2">Salade thon crudités</a>
+                  <a href="/components/recettes_list1_entree/salade_pates_crudités.html#title2">Salade pates crudités</a>
+                  <a href="/components/recettes_list1_entree/salade_melon_avocat.html#title2">Salade melon avocat</a>
+                  <p>Plats</p>
+                  <a href="/components/recettes_list2_plat/gaufres_aux_champignons.html#title2">Gaufres aux champignons</a>
+                  <a href="/components/recettes_list2_plat/flan_de_courgettes.html#title2">Flan de courgettes</a>
+                  <a href="/components/recettes_list2_plat/pommes_de_terre_chorizo.html#title2">Pommes de terre au chorizo</a>
+                  <a href="/components/recettes_list2_plat/Gratin_de_pommes_de_terre_au_camembert.html#title2">Gratin au camembert</a>
+                  <a href="/components/recettes_list2_plat/Gratin_de_saumon.html#title2">Gratin de saumon</a>
+                </div>
+                <div class="gap">
+                  <p>Desserts</p>
+                  <a href="/components/recettes_list4_dessert/mini_cakes_aux_pépites_de_chocolat.html#title2">mini gateaux aux pepites de chocolat</a>
+                  <a href="/components/recettes_list4_dessert/Cookies.html#title2">Cookies</a>
+                  <a href="/components/recettes_list4_dessert/Fondant_au_chocolat.html#title2">Fondant au chocolat</a>
+                  <a href="/components/recettes_list4_dessert/Marbre_moelleux.html#title2">Marbré moelleux</a>
+                  <a href="/components/recettes_list4_dessert/crepes.html#title2">Crêpes</a>
+                  <p>Tartes et cakes salé</p>
+                  <a href="/components/recettes_list3_tarte/tarte_lardons.html">Tarte aux lardons</a>
+                  <a href="/components/recettes_list3_tarte/tarte_epinards_ricotta.html#title2">Tarte epinards ricotta</a>
+                </div>
+              </div>
+            </nav>
+          </menu>
+          
+          <script>
+            const burger = document.querySelector("#menu_burger");
+            const nav = document.querySelector("#menu_open");
+        
+            burger.addEventListener("click", () => {
+              nav.classList.toggle("menu_display");
+            });
+            nav.addEventListener("click", () => {
+              nav.classList.toggle("menu_display");
+            });
+          </script>
+        </div>
+
+      <p class="site"></p>
+      <a href="/index.html" title="Acceuil">
+        <h1>Les recettes d'Angélique</h1>
+      </a>
+    </logo>
+
+    
+    
+      <script src="/js/sript.js"></script>
+    </header>
 <div id="title2">
   <h2>Marbré moelleux ( cake factory)</h2>
 </div>
