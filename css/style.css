@@ -242,12 +242,13 @@ footer {
 }
 
 .footer-links a {
+  
   color: #333;
   text-decoration: none;
   margin: 0 auto;
   text-align: center;
   max-width: 200px;
-
+  margin-bottom: 5px;
 }
 
 .footer-links a:hover {
