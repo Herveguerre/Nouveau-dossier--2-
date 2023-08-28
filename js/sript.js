@@ -1,23 +1,14 @@
 
-// Fonction pour récupérer et insérer le contenu du header
-function inclureHeader() {
-  fetch("../../components/header.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("header").innerHTML = data;
-    });
-}
-inclureHeader();
 
 // Fonction pour récupérer et insérer le contenu du hero
-function inclureHero() {
-  fetch("../../components/hero.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("hero").innerHTML = data;
-    });
-}
-inclureHero();
+// function inclureHero() {
+//   fetch("../../components/hero.html")
+//     .then((response) => response.text())
+//     .then((data) => {
+//       document.getElementById("hero").innerHTML = data;
+//     });
+// }
+// inclureHero();
 
 // Fonction pour récupérer et insérer le contenu du liste1
 function inclureList_1() {
