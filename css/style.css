@@ -451,7 +451,7 @@ body form {
   margin-bottom: 20px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
   header {
     height: 380px;
   }
