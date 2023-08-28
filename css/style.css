@@ -56,7 +56,6 @@ body {
   margin-left: 20px;
   margin-top: -50px;
   z-index: 99999;
-  
 }
 .logo img {
   margin-top: 20px;
@@ -125,8 +124,6 @@ h2 {
 .margin {
   margin: 0 auto;
   width: 80%;
-
-  
 }
 
 body {
@@ -183,7 +180,6 @@ body {
   font-size: 20px;
   flex-shrink: 0;
   background: linear-gradient(transparent, rgba(255, 255, 255, 0.217));
-  
 }
 .card_sucre img {
   width: 90%;
@@ -233,13 +229,11 @@ footer {
   padding: 20px;
   text-align: center;
   margin-bottom: 0;
-  
 }
 footer .flex {
   margin-bottom: 20px;
 }
 .footer-links a {
-  
   color: #333;
   text-decoration: none;
   margin: 0 auto;
@@ -274,35 +268,11 @@ footer .flex {
 .card_5img {
   margin: 0 auto;
   text-align: center;
-  
 }
 .card_5img img {
   width: 90%;
   margin-bottom: 20px;
   border-radius: 20px;
-}
-
-@media (min-width: 768px) {
-  header {
-    height: 380px;
-  }
-  .card_5 {
-    display: flex;
-  }
-  .card_5txt {
-    width: 400px;
-  }
-  .card_5img img {
-    width: 400px;
-  }
-  .container_card::-webkit-scrollbar-thumb {
-    background-color: var(--clr5); /*new style*/
-    border-radius: 10px;
-  }
-  .next-button,
-  .prev-button {
-    display: none; /* block quant ils fonctionnerons */
-  }
 }
 
 /*menu*/
@@ -314,8 +284,6 @@ menu {
   justify-content: center;
   position: relative;
   z-index: 2;
-
-  
 }
 menu nav {
   text-align: center;
@@ -360,7 +328,6 @@ menu nav {
 
 .gap {
   max-width: 450px;
-  
 }
 .gap p {
   margin-top: 15px;
@@ -385,7 +352,12 @@ menu nav ul li {
   color: #8b4513;
 }
 /* contact*/
-
+#form_page {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+}
 #contact-form {
   background-color: #72b86a36;
   padding: 20px;
@@ -394,27 +366,25 @@ menu nav ul li {
   max-width: 400px;
   height: 400px;
   z-index: 99;
+  align-items: center;
 }
 body form {
   align-items: center;
   margin: 0 auto;
 }
 .center {
-  
   text-align: center;
   margin: 20px;
   margin: 0 auto;
   width: 90%;
- 
 }
-.wrap{
+.wrap {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   max-width: 300px;
- 
 }
-.wrap a{
+.wrap a {
   text-align: center;
 }
 #contact-form label {
@@ -466,8 +436,43 @@ body form {
   margin-top: 5px;
 }
 /*about*/
-.about  p {
-    width: 80%;
-    margin-bottom: 20px;
-  }
+.about_container {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  min-height: 1200px;
+}
 
+.about {
+  max-width: 1300px;
+}
+.about p {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 380px;
+  }
+  .card_5 {
+    display: flex;
+  }
+  .card_5txt {
+    width: 400px;
+  }
+  .card_5img img {
+    width: 400px;
+  }
+  .container_card::-webkit-scrollbar-thumb {
+    background-color: var(--clr5); /*new style*/
+    border-radius: 10px;
+  }
+  .next-button,
+  .prev-button {
+    display: none;
+  }
+  .about_container {
+    min-height: 600px;
+  }
+}

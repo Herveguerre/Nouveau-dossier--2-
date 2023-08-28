@@ -132,19 +132,21 @@
     </header>
 
     <p class="center">Le formulaire sera bientôt fonctionnel</p>
-    <form id="contact-form" method="post" action="traitement_formulaire.php">
-      <label for="name">Nom :</label>
-      <input type="text" id="name" name="name" required />
+    <div id="form_page">
+      <form id="contact-form" method="post" action="traitement_formulaire.php">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required />
 
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required />
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
 
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" required></textarea>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
 
-      <button type="submit" id="submit-btn">Envoyer</button>
-      <p id="message" class="success-message"></p>
-    </form>
+        <button type="submit" id="submit-btn">Envoyer</button>
+        <p id="message" class="success-message"></p>
+      </form>
+    </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const submitBtn = document.getElementById("submit-btn");

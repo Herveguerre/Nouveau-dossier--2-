@@ -7,6 +7,7 @@ function inclureHeader() {
       document.getElementById("header").innerHTML = data;
     });
 }
+inclureHeader();
 
 // Fonction pour récupérer et insérer le contenu du hero
 function inclureHero() {
@@ -16,6 +17,7 @@ function inclureHero() {
       document.getElementById("hero").innerHTML = data;
     });
 }
+inclureHero();
 
 // Fonction pour récupérer et insérer le contenu du liste1
 function inclureList_1() {
@@ -25,6 +27,7 @@ function inclureList_1() {
       document.getElementById("list_1").innerHTML = data;
     });
 }
+inclureList_1();
 
 // Fonction pour récupérer et insérer le contenu du liste2
 function inclureList_2() {
@@ -34,6 +37,7 @@ function inclureList_2() {
       document.getElementById("list_2").innerHTML = data;
     });
 }
+inclureList_2();
 
 // Fonction pour récupérer et insérer le contenu du liste3
 function inclureList_3() {
@@ -43,6 +47,7 @@ function inclureList_3() {
       document.getElementById("list_3").innerHTML = data;
     });
 }
+inclureList_3();
 
 // Fonction pour récupérer et insérer le contenu du liste4
 function inclureList_4() {
@@ -52,6 +57,7 @@ function inclureList_4() {
       document.getElementById("list_4").innerHTML = data;
     });
 }
+inclureList_4();
 
 // Fonction pour récupérer et insérer le contenu du liste5
 function inclureList_5() {
@@ -61,6 +67,7 @@ function inclureList_5() {
       document.getElementById("list_5").innerHTML = data;
     });
 }
+inclureList_5();
 
 // Fonction pour récupérer et insérer le contenu du footer
 function inclureFooter() {
@@ -70,60 +77,7 @@ function inclureFooter() {
       document.getElementById("footer").innerHTML = data;
     });
 }
-
-// Fonction pour récupérer et insérer le contenu du bouton
-function inclureBouton() {
-  fetch("../../components/bouton.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("bouton").innerHTML = data;
-    });
-}
-
-// Fonction pour récupérer et insérer le contenu du nav
-function inclureNav() {
-  fetch("../../components/nav.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("nav").innerHTML = data;
-    });
-}
-
-// Appel des fonctions pour inclure le header et le footer etc
-
-inclureHeader();
-inclureHero();
-inclureList_1();
-inclureList_2();
-inclureList_3();
-inclureList_4();
-inclureList_5();
 inclureFooter();
-inclureBouton();
-inclureNav();
-
-// Désactiver l'événement contextmenu (clic droit)
-// document.addEventListener('contextmenu', function(e) {
-// e.preventDefault();
-// });
-
-
-
-function scrollLeft() {
-  const containerCard = document.querySelector(".container_card");
-  const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
-  containerCard.scrollBy(-cardWidth, 0);
-}
-
-function scrollRight() {
-  const containerCard = document.querySelector(".container_card");
-  const cardWidth = document.querySelector(".card_sucre").offsetWidth + 20;
-  containerCard.scrollBy(cardWidth, 0);
-}
-
-
-
-
 
 // Enregistrez la position de défilement actuelle dans l'historique
 function saveScrollPosition() {
@@ -146,15 +100,3 @@ window.addEventListener('popstate', function (event) {
     window.scrollTo(0, scrollPosition);
   }
 });
-
-
-
-
-
-
-
-
-//menu
-
-
-
