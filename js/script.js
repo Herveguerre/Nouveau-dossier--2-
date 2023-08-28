@@ -45,7 +45,7 @@ function inclureList_4() {
   fetch("../../components/list_dessert_4.html")
     .then((response) => response.text())
     .then((data) => {
-      document.getElementById("list_4").innerHTML = data;
+      document.getElementById("list_4").innerHTML =  data;
     });
 }
 inclureList_4();
