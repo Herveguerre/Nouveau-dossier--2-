@@ -1,8 +1,23 @@
 .site {
+  
+  position: relative;
   color: #8b4513;
   text-align: center;
+  
+  
+  
 }
-
+.site a{
+  
+  position: absolute;
+  margin-top: -120px;
+}
+.site :nth-child(1){
+  margin-right: 20px;
+}
+.site :nth-child(2){
+  margin-left: 20px;
+}
 :root {
   --clr1: #f63;
   --clr2: #f9c79d;
