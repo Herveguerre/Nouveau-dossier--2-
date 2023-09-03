@@ -1,29 +1,9 @@
-.site {
-  
-  position: relative;
-  color: #8b4513;
-  text-align: center;
-  
-  
-  
-}
-.site a{
-  
-  position: absolute;
-  margin-top: -120px;
-}
-.site :nth-child(1){
-  margin-right: 20px;
-}
-.site :nth-child(2){
-  margin-left: 20px;
-}
 :root {
   --clr1: #f63;
   --clr2: #f9c79d;
   --clr3: #8b4513;
   --clr4: #72b86a36;
-  --clr5: #4d84479c;
+  --clr5: #4d8447;
   --clrtxtw: #fff;
 }
 
@@ -34,6 +14,25 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.site {
+  display: none;
+  position: relative;
+  color: #8b4513;
+  text-align: center;
+}
+.site a{
+  gap: 20px;
+  margin-top: -120px;
+}
+.site1{
+  position: absolute;
+  left: 58%;
+}
+.site2{
+  position: absolute;
+  left: 48%;
+}
+
 
 header {
   height: 250px;
@@ -107,9 +106,10 @@ h2 {
   /* background: linear-gradient(to right, var(--clr1), var(--clr3));
   -webkit-background-clip: text;
   background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
   animation: color-sweep 10s linear infinite; */
   color: var(--clr5);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
+  
 }
 
 h1 {
@@ -489,5 +489,8 @@ body form {
   }
   .about_container {
     min-height: 600px;
+  }
+  .site{
+    display: block;
   }
 }
