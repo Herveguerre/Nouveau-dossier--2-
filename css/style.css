@@ -74,6 +74,7 @@ body {
 .logo img {
   margin-top: 20px;
   width: 120px;
+  height: 71px;
   border-radius: 20px 0 20px 0;
   /* box-shadow: -23px -23px 46px #b54632, 23px 23px 46px #ff7e5a; */
 }
