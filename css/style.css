@@ -401,6 +401,7 @@ body form {
 }
 .wrap a {
   text-align: center;
+  width: 200px;
 }
 #contact-form label {
   display: block;
