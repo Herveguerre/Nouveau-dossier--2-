@@ -51,14 +51,14 @@ function inclureList_4() {
 inclureList_4();
 
 // Fonction pour récupérer et insérer le contenu du liste5
-function inclureList_5() {
-  fetch("../../components/list_bebe_5.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("list_5").innerHTML = data;
-    });
-}
-inclureList_5();
+// function inclureList_5() {
+//   fetch("../../components/list_bebe_5.html")
+//     .then((response) => response.text())
+//     .then((data) => {
+//       document.getElementById("list_5").innerHTML = data;
+//     });
+// }
+// inclureList_5();
 
 // Fonction pour récupérer et insérer le contenu du footer
 function inclureFooter() {
